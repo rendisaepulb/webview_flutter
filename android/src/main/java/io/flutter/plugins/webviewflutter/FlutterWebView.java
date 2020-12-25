@@ -28,6 +28,8 @@ import java.util.List;
 import java.util.Map;
 import android.net.Uri;
 import android.webkit.GeolocationPermissions;
+import android.webkit.ValueCallback;
+import android.content.Intent;
 
 public class FlutterWebView implements PlatformView, MethodCallHandler {
   private static final String JS_CHANNEL_NAMES_FIELD = "javascriptChannelNames";
