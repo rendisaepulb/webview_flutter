@@ -26,6 +26,8 @@ import io.flutter.plugin.platform.PlatformView;
 import java.util.Collections;
 import java.util.List;
 import java.util.Map;
+import android.net.Uri;
+import android.webkit.GeolocationPermissions;
 
 public class FlutterWebView implements PlatformView, MethodCallHandler {
   private static final String JS_CHANNEL_NAMES_FIELD = "javascriptChannelNames";
@@ -33,6 +35,7 @@ public class FlutterWebView implements PlatformView, MethodCallHandler {
   private final MethodChannel methodChannel;
   private final FlutterWebViewClient flutterWebViewClient;
   private final Handler platformThreadHandler;
+  Context context1;
 
   // Verifies that a url opened by `Window.open` has a secure url.
   private class FlutterWebChromeClient extends WebChromeClient {
@@ -88,6 +91,34 @@ public class FlutterWebView implements PlatformView, MethodCallHandler {
         (DisplayManager) context.getSystemService(Context.DISPLAY_SERVICE);
     displayListenerProxy.onPreWebViewInitialization(displayManager);
     webView = new InputAwareWebView(context, containerView);
+    /**
+     * start
+     * input='file'
+     * */
+    context1 = context;
+    webView.setWebChromeClient(new WebChromeClient(){
+      @Override
+      public boolean onShowFileChooser(
+              WebView webView, ValueCallback<Uri[]> filePathCallback,
+              FileChooserParams fileChooserParams) {
+
+        //成功跳转newActivity！！！很 nice
+        //跳转到newActivity去打开文件夹的操作
+        Intent intent = new Intent(context1,newActivity.class);
+        newActivity.getfilePathCallback(filePathCallback);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        context1.startActivity(intent);
+        return true;
+      }
+
+      public void onGeolocationPermissionsShowPrompt(String origin, GeolocationPermissions.Callback callback) {
+        callback.invoke(origin, true, false);
+      }
+
+    });
+    /**
+     * end
+     * */
     displayListenerProxy.onPostWebViewInitialization(displayManager);
 
     platformThreadHandler = new Handler(context.getMainLooper());
