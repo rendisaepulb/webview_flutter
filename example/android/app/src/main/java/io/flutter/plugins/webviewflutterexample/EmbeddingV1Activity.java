@@ -2,11 +2,11 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package io.flutter.plugins.webviewfluttercustomexample;
+package io.flutter.plugins.webviewflutterexample;
 
 import android.os.Bundle;
 import dev.flutter.plugins.integration_test.IntegrationTestPlugin;
-import io.flutter.plugins.webviewfluttercustom.WebViewFlutterPlugin;
+import io.flutter.plugins.webviewflutter.WebViewFlutterPlugin;
 
 @SuppressWarnings("deprecation")
 public class EmbeddingV1Activity extends io.flutter.app.FlutterActivity {
@@ -16,6 +16,6 @@ public class EmbeddingV1Activity extends io.flutter.app.FlutterActivity {
     IntegrationTestPlugin.registerWith(
         registrarFor("dev.flutter.plugins.integration_test.IntegrationTestPlugin"));
     WebViewFlutterPlugin.registerWith(
-        registrarFor("io.flutter.plugins.webviewfluttercustom.WebViewFlutterPlugin"));
+        registrarFor("io.flutter.plugins.webviewflutter.WebViewFlutterPlugin"));
   }
 }

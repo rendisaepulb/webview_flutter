@@ -1,4 +1,4 @@
-package io.flutter.plugins.webviewfluttercustom;
+package io.flutter.plugins.webviewflutter;
 
 import static android.hardware.display.DisplayManager.DisplayListener;
 

@@ -1,4 +1,4 @@
-package io.flutter.plugins.webviewfluttercustom;
+package io.flutter.plugins.webviewflutter;
 
 import android.app.Activity;
 import android.app.Dialog;
