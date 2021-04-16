@@ -22,7 +22,7 @@ flutter:
   plugin:
     platforms:
       android:
-        package: io.flutter.plugins.webviewfluttercustom
-        pluginClass: WebViewFlutterCustomPlugin
+        package: io.flutter.plugins.webviewflutter
+        pluginClass: WebViewFlutterPlugin
       ios:
-        pluginClass: FLTWebViewFlutterCustomPlugin
+        pluginClass: FLTWebViewFlutterPlugin

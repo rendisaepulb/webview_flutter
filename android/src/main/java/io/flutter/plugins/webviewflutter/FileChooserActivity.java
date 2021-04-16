@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package io.flutter.plugins.webviewfluttercustom;
+package io.flutter.plugins.webviewflutter;
 
-import static io.flutter.plugins.webviewfluttercustom.Constants.ACTION_FILE_CHOOSER_FINISHED;
-import static io.flutter.plugins.webviewfluttercustom.Constants.EXTRA_FILE_URI;
-import static io.flutter.plugins.webviewfluttercustom.Constants.EXTRA_SHOW_CAMERA_OPTION;
-import static io.flutter.plugins.webviewfluttercustom.Constants.EXTRA_TITLE;
-import static io.flutter.plugins.webviewfluttercustom.Constants.EXTRA_TYPE;
-import static io.flutter.plugins.webviewfluttercustom.Constants.WEBVIEW_STORAGE_DIRECTORY;
+import static io.flutter.plugins.webviewflutter.Constants.ACTION_FILE_CHOOSER_FINISHED;
+import static io.flutter.plugins.webviewflutter.Constants.EXTRA_FILE_URI;
+import static io.flutter.plugins.webviewflutter.Constants.EXTRA_SHOW_CAMERA_OPTION;
+import static io.flutter.plugins.webviewflutter.Constants.EXTRA_TITLE;
+import static io.flutter.plugins.webviewflutter.Constants.EXTRA_TYPE;
+import static io.flutter.plugins.webviewflutter.Constants.WEBVIEW_STORAGE_DIRECTORY;
 
 import android.app.Activity;
 import android.content.Intent;

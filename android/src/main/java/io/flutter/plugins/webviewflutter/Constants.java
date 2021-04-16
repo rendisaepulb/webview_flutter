@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package io.flutter.plugins.webviewfluttercustom;
+package io.flutter.plugins.webviewflutter;
 
 public class Constants {
   static final String ACTION_REQUEST_CAMERA_PERMISSION_FINISHED =

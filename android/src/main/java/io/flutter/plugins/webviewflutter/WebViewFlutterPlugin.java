@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package io.flutter.plugins.webviewfluttercustom;
+package io.flutter.plugins.webviewflutter;
 
 import io.flutter.embedding.engine.plugins.FlutterPlugin;
 import io.flutter.plugin.common.BinaryMessenger;
@@ -15,7 +15,7 @@ import io.flutter.plugin.common.BinaryMessenger;
  * <p>Call {@link #registerWith(Registrar)} to use the stable {@code io.flutter.plugin.common}
  * package instead.
  */
-public class WebViewFlutterCustomPlugin implements FlutterPlugin {
+public class WebViewFlutterPlugin implements FlutterPlugin {
 
   private FlutterCookieManager flutterCookieManager;
 
@@ -31,7 +31,7 @@ public class WebViewFlutterCustomPlugin implements FlutterPlugin {
    * <p>Registration should eventually be handled automatically by v2 of the
    * GeneratedPluginRegistrant. https://github.com/flutter/flutter/issues/42694
    */
-  public WebViewFlutterCustomPlugin() {}
+  public WebViewFlutterPlugin() {}
 
   /**
    * Registers a plugin implementation that uses the stable {@code io.flutter.plugin.common}
