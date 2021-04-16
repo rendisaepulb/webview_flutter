@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package io.flutter.plugins.webviewflutter;
+package io.flutter.plugins.webviewfluttercustom;
 
-import static io.flutter.plugins.webviewflutter.Constants.ACTION_REQUEST_CAMERA_PERMISSION_FINISHED;
+import static io.flutter.plugins.webviewfluttercustom.Constants.ACTION_REQUEST_CAMERA_PERMISSION_FINISHED;
 
 import android.Manifest;
 import android.app.Activity;

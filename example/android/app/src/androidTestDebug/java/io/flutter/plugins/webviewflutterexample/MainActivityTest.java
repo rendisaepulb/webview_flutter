@@ -1,4 +1,4 @@
-package io.flutter.plugins.webviewflutterexample;
+package io.flutter.plugins.webviewfluttercustomexample;
 
 import androidx.test.rule.ActivityTestRule;
 import dev.flutter.plugins.integration_test.FlutterTestRunner;
