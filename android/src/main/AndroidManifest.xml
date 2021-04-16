@@ -1,15 +1,15 @@
-<manifest package="io.flutter.plugins.webviewflutter"
+<manifest package="io.flutter.plugins.webviewfluttercustom"
     xmlns:android="http://schemas.android.com/apk/res/android">
     <application>
         <activity
-            android:name="io.flutter.plugins.webviewflutter.RequestCameraPermissionActivity"
+            android:name="io.flutter.plugins.webviewfluttercustom.RequestCameraPermissionActivity"
             android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
         <activity
-            android:name="io.flutter.plugins.webviewflutter.FileChooserActivity"
+            android:name="io.flutter.plugins.webviewfluttercustom.FileChooserActivity"
             android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
 
         <provider
-            android:name="io.flutter.plugins.webviewflutter.GenericFileProvider"
+            android:name="io.flutter.plugins.webviewfluttercustom.GenericFileProvider"
             android:authorities="${applicationId}.generic.provider"
             android:exported="false"
             android:grantUriPermissions="true"
